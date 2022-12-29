@@ -1,11 +1,20 @@
 function reverseString(str) {
   // type your code here
-  let splitted = str.split("");
-  let i = [];
-  for (let i = 0; i < str.length; i++) {
-    // console.log(splitted[i]);
-    return splitted[i];
+
+  // let reveresed = str.split("").reverse().join("");
+  // return reveresed
+
+  // Create empty string to store iterated letter
+  let newStr = "";
+
+  // Iterate from last letter (last length - 1); until 0; decrement
+  for (let i = str.length-1; i >= 0; i--) {
+    // Add iterated letter to empty string
+    newStr += str[i];
   }
+
+  // Return new string!
+  return newStr
 }
 
 if (require.main === module) {
