@@ -1,20 +1,17 @@
 function reverseString(str) {
   // type your code here
 
-  // let reveresed = str.split("").reverse().join("");
-  // return reveresed
+  let newString = "";
 
-  // Create empty string to store iterated letter
-  let newStr = "";
-
-  // Iterate from last letter (last length - 1); until 0; decrement
-  for (let i = str.length-1; i >= 0; i--) {
-    // Add iterated letter to empty string
-    newStr += str[i];
+  for (let i = str.length - 1; i >= 0; i--) {
+    newString += str[i];
   }
 
-  // Return new string!
-  return newStr
+  return newString;
+
+  // let newStr = str.split("").reverse().join("");
+
+  // return newStr
 }
 
 if (require.main === module) {
@@ -31,9 +28,10 @@ if (require.main === module) {
 module.exports = reverseString;
 
 // Please add your pseudocode to this file
-
-///// I want to print string from the last length to first length
-///// First, separate string
-///// Then, iterate backward
+//// I want to input reversed letters 1 by 1
+//// First, create empty variable to store iterated letters
+//// Iterate from last length-1, until equal to 0, decrement
+//// Add iterated letters to variable
+//// Then, return variable
 
 // And a written explanation of your solution
