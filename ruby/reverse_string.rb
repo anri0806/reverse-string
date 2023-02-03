@@ -1,6 +1,43 @@
 def reverse_string(str)
   # type your code in here
 
+  newStr = ""
+  i = str.length
+
+  while i > 0 do
+    i -= 1
+    newStr = newStr + str[i]
+  end
+
+  newStr
+ 
+end
+
+if __FILE__ == $PROGRAM_NAME
+  puts "Expecting: 'ih'"
+  puts "=>", reverse_string('hi')
+
+  puts
+
+  puts "Expecting: 'ybabtac'"
+  puts "=>", reverse_string('catbaby')
+
+  # Don't forget to add your own!
+end
+
+# Please add your pseudocode to this file
+### I want to iterate string one by one until the last length
+### Then, add iterated letter to variable
+
+
+
+######## First Attempt
+## I want to input reveresed string
+
+## First, create variable and split string 
+## Then, iterate each letter AND ADD LETTER IN FRONT OF PREVIOUS LETTER
+
+
   ### Using while method
 
   # Varilable to store iterated letter
@@ -35,25 +72,4 @@ def reverse_string(str)
   ### Using .reverse method
   # newStr = str.split("").reverse().join("")
   # return newStr
-  
-end
-
-if __FILE__ == $PROGRAM_NAME
-  puts "Expecting: 'ih'"
-  puts "=>", reverse_string('hi')
-
-  puts
-
-  puts "Expecting: 'ybabtac'"
-  puts "=>", reverse_string('catbaby')
-
-  # Don't forget to add your own!
-end
-
-# Please add your pseudocode to this file
-## I want to input reveresed string
-
-## First, create variable and split string 
-## Then, iterate each letter AND ADD LETTER IN FRONT OF PREVIOUS LETTER
-
-# And a written explanation of your solution
+ 
