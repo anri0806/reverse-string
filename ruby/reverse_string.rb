@@ -2,11 +2,13 @@ def reverse_string(str)
   # type your code in here
 
   newStr = ""
-  i = str.length
 
-  while i > 0 do
-    i -= 1
+  i = 0
+  length = str.length
+
+  length.times do
     newStr = newStr + str[i]
+    i += 1
   end
 
   newStr
@@ -26,8 +28,22 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+
+
+
+#### Second Attempt
 ### I want to iterate string one by one until the last length
 ### Then, add iterated letter to variable
+
+# newStr = ""
+# i = str.length
+
+# while i > 0 do
+#   i -= 1
+#   newStr = newStr + str[i]
+# end
+
+# newStr
 
 
 
@@ -41,18 +57,18 @@ end
   ### Using while method
 
   # Varilable to store iterated letter
-  newStr = ""
+  # newStr = ""
 
   # While i is less than string length (5), in other words,
   # while i is less than 5, add iterated letter in front of exsiting letter
   # increment i
-  i = 0
-  while i < str.length
-    newStr = str[i] + newStr
-    i += 1
-  end
+  # i = 0
+  # while i < str.length
+  #   newStr = str[i] + newStr
+  #   i += 1
+  # end
 
-  return newStr
+  # return newStr
 
   
 
