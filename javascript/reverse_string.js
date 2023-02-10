@@ -1,13 +1,13 @@
 function reverseString(str) {
   // type your code here
 
-  let newStr = ""
+  let newStr = "";
 
-  for (let i = 0; i < str.length ; i++) {
-    newStr += str[i]
+  for (let i = str.length - 1; i >= 0; i--) {
+    newStr = newStr + str[i];
   }
 
-  return newStr
+  return newStr;
 }
 
 if (require.main === module) {
@@ -25,13 +25,25 @@ module.exports = reverseString;
 
 // Please add your pseudocode to this file
 
+/// I want to return reversed input
+/// Create empty string to store iterated letter
+/// Use for loop to iterate from last length until 0
+/// Store each letter in var
+/// Return
+
+/// THIRD TIME
+
 //// First create variable to store iterated letter
 //// Iterate each letter from last length until 0
 //// Store iterated letter to above var
 
+// let newStr = ""
 
+// for (let i = 0; i < str.length ; i++) {
+//   newStr += str[i]
+// }
 
-
+// return newStr
 
 //// Second Time /////
 // I want to console log reversed word using iteration
@@ -46,7 +58,6 @@ module.exports = reverseString;
 // }
 
 // return newStr;
-
 
 //// FIrst Time /////
 //// I want to input reversed letters 1 by 1
