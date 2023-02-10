@@ -2,17 +2,15 @@ def reverse_string(str)
   # type your code in here
 
   newStr = ""
-
   i = 0
-  length = str.length
 
-  length.times do
-    newStr = newStr + str[i]
+  while i < str.length
+    newStr = str[i] + newStr
     i += 1
   end
 
   newStr
- 
+
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -28,6 +26,22 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+
+
+
+#### Third Attempt
+
+# newStr = ""
+
+# i = 0
+# length = str.length
+
+# length.times do
+#   newStr = newStr + str[i]
+#   i += 1
+# end
+
+# newStr
 
 
 
